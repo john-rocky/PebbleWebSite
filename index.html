@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ========== SEO対策：ここが超重要！ ========== -->
+  <!--
+    【SEOとは？】
+    SEO = Search Engine Optimization（検索エンジン最適化）
+    Googleなどの検索で上の方に表示されるための対策のこと。
+    以下のmetaタグで「このサイトは何のサイトか」を検索エンジンに伝える。
+  -->
+
+  <!-- ページタイトル（検索結果に表示される。最重要！） -->
+  <title>Pebble Inc. | Web開発・クラウド・AI - 東京のITカンパニー</title>
+
+  <!-- サイトの説明文（検索結果のタイトル下に表示される） -->
+  <meta name="description" content="Pebble（ペブル）は東京を拠点に、Webアプリケーション開発、クラウドインフラ構築、AI/機械学習の導入支援を行うITカンパニーです。最先端テクノロジーでビジネスの課題を解決します。">
+
+  <!-- 検索キーワード（効果は薄いが設定しておく） -->
+  <meta name="keywords" content="Pebble, ペブル, Web開発, アプリ開発, クラウド, AWS, AI, 機械学習, IT企業, 東京, システム開発, DX推進">
+
+  <!-- 検索エンジンに「このページを登録していいよ」と伝える -->
+  <meta name="robots" content="index, follow">
+
+  <!-- サイトの正式なURL（重複ページ対策） -->
+  <link rel="canonical" href="https://pebble.co.jp/">
+
+  <!-- ========== OGP（SNSでシェアされた時の見た目） ========== -->
+  <!--
+    TwitterやFacebookでURLを貼った時に、
+    タイトル・説明・画像がきれいに表示されるようにする設定
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pebble Inc. | テクノロジーで未来を創る">
+  <meta property="og:description" content="Webアプリケーション開発、クラウドインフラ構築、AI導入支援。最先端テクノロジーでビジネスの課題を解決するITカンパニー。">
+  <meta property="og:url" content="https://pebble.co.jp/">
+  <meta property="og:image" content="https://pebble.co.jp/og-image.jpg">
+  <meta property="og:site_name" content="Pebble Inc.">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter用の設定 -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pebble Inc. | テクノロジーで未来を創る">
+  <meta name="twitter:description" content="Webアプリケーション開発、クラウドインフラ構築、AI導入支援。東京のITカンパニー。">
+  <meta name="twitter:image" content="https://pebble.co.jp/og-image.jpg">
+
+  <!-- ========== 構造化データ（Googleにサイト情報を詳しく伝える） ========== -->
+  <!--
+    JSON-LD形式で「これはIT企業のサイトです」と伝える。
+    検索結果にリッチな情報（住所・電話番号など）が表示されることがある。
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Pebble Inc.",
+    "alternateName": "ペブル",
+    "url": "https://pebble.co.jp",
+    "logo": "https://pebble.co.jp/logo.png",
+    "description": "Webアプリケーション開発、クラウドインフラ構築、AI/機械学習導入支援を行うITカンパニー",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "xxx 1-2-3",
+      "addressLocality": "渋谷区",
+      "addressRegion": "東京都",
+      "postalCode": "150-0000",
+      "addressCountry": "JP"
+    },
+    "telephone": "+81-3-1234-5678",
+    "email": "info@pebble.co.jp",
+    "foundingDate": "2020",
+    "sameAs": [],
+    "serviceArea": {
+      "@type": "Country",
+      "name": "Japan"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "ITサービス",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Webアプリケーション開発",
+            "description": "React, Next.jsなどを活用した高速でスケーラブルなWebアプリケーション開発"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "クラウドインフラ構築",
+            "description": "AWS / GCP / Azureを活用したクラウドインフラの設計・構築・運用"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "AI / 機械学習導入支援",
+            "description": "データ分析からAIモデルの開発・運用までのフルサポート"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "UI/UXデザイン",
+            "description": "ユーザー中心の設計思想に基づいたインターフェースデザイン"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+
+  <!-- Google Fonts（おしゃれなフォントを読み込む） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== ナビゲーション（上部のメニュー） ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">&#x25C8;</span> Pebble
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#founder">Founder</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== ヒーローセクション ========== -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <!-- 背景画像（テック系のかっこいいやつ） -->
+    <div class="hero-bg-image"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Technology × Creativity</p>
+      <h1 class="hero-title">
+        小さな石が、<br>
+        <span class="gradient-text">大きな波紋</span>を生む。
+      </h1>
+      <p class="hero-description">
+        Pebbleは最先端のテクノロジーで、ビジネスの課題を解決し、<br class="hide-sp">
+        新しい価値を創造するITカンパニーです。
+      </p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary">サービスを見る</a>
+        <a href="#contact" class="btn btn-outline">お問い合わせ</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="150">0</span>+
+          <span class="stat-label">プロジェクト実績</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="50">0</span>+
+          <span class="stat-label">クライアント</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="99">0</span>%
+          <span class="stat-label">顧客満足度</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Aboutセクション ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">About Us</p>
+        <h2 class="section-title">Pebbleについて</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80" alt="Pebbleのオフィス風景 - モダンなコワーキングスペース" loading="lazy">
+          </div>
+          <p>
+            私たちPebbleは「小さな一歩が、大きな変化を生む」という信念のもと、
+            2020年に設立されたITカンパニーです。
+          </p>
+          <p>
+            Webアプリケーション開発、クラウドインフラ構築、AI/ML導入支援まで、
+            テクノロジーの力でお客様のビジネスを次のステージへ導きます。
+          </p>
+          <p>
+            企画・設計からリリース・運用まで、ワンストップでサポートします。
+          </p>
+        </div>
+        <div class="about-values">
+          <div class="value-card">
+            <div class="value-icon">&#9670;</div>
+            <h3>Innovation</h3>
+            <p>常に最新技術をキャッチアップし、最適なソリューションを提案します。</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">&#9670;</div>
+            <h3>Quality</h3>
+            <p>コードの品質にこだわり、保守性の高いシステムを構築します。</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">&#9670;</div>
+            <h3>Partnership</h3>
+            <p>お客様のパートナーとして、ビジネスの成長に寄り添います。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Servicesセクション ========== -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Services</p>
+        <h2 class="section-title">私たちにできること</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-number">01</div>
+          <div class="service-icon">&#9776;</div>
+          <h3>Web Development</h3>
+          <p>React, Next.js, Vue.jsなどモダンな技術スタックを活用した、高速でスケーラブルなWebアプリケーション開発。</p>
+          <ul class="service-tags">
+            <li>React</li>
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-number">02</div>
+          <div class="service-icon">&#9729;</div>
+          <h3>Cloud & Infrastructure</h3>
+          <p>AWS / GCP / Azureを活用したクラウドインフラの設計・構築・運用。コスト最適化もお任せください。</p>
+          <ul class="service-tags">
+            <li>AWS</li>
+            <li>GCP</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-number">03</div>
+          <div class="service-icon">&#9883;</div>
+          <h3>AI / Machine Learning</h3>
+          <p>データ分析からAIモデルの開発・運用まで。ビジネスにAIを実装し、意思決定を加速させます。</p>
+          <ul class="service-tags">
+            <li>Python</li>
+            <li>TensorFlow</li>
+            <li>LLM</li>
+            <li>Data Pipeline</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-number">04</div>
+          <div class="service-icon">&#9878;</div>
+          <h3>UI/UX Design</h3>
+          <p>ユーザー中心の設計思想に基づいた、直感的で美しいインターフェースをデザインします。</p>
+          <ul class="service-tags">
+            <li>Figma</li>
+            <li>Design System</li>
+            <li>Prototyping</li>
+            <li>User Research</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Worksセクション（実績に画像を追加） ========== -->
+  <section class="section works" id="works">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Works</p>
+        <h2 class="section-title">実績紹介</h2>
+      </div>
+      <div class="works-grid">
+        <article class="work-card work-large">
+          <div class="work-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="ECプラットフォームのダッシュボード画面 - データ分析とアナリティクス" loading="lazy">
+          </div>
+          <div class="work-info">
+            <span class="work-category">Web Application</span>
+            <h3>大手小売チェーン ECプラットフォーム</h3>
+            <p>月間100万PVを支えるECサイトをNext.js + microservicesで構築。ページ表示速度を70%改善。</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-image">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&q=80" alt="AIシステムのコード画面 - 機械学習モデルの開発" loading="lazy">
+          </div>
+          <div class="work-info">
+            <span class="work-category">AI / ML</span>
+            <h3>需要予測AIシステム</h3>
+            <p>機械学習による需要予測で在庫ロスを40%削減。</p>
+          </div>
+        </article>
+        <article class="work-card">
+          <div class="work-image">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" alt="グローバルネットワークを表すデジタル地球 - クラウドインフラ" loading="lazy">
+          </div>
+          <div class="work-info">
+            <span class="work-category">Cloud Infrastructure</span>
+            <h3>金融系SaaS基盤構築</h3>
+            <p>AWS上にセキュアな金融SaaS基盤を構築。99.99%の可用性を実現。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Founderセクション（1人用に変更） ========== -->
+  <section class="section founder" id="founder">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Founder</p>
+        <h2 class="section-title">代表紹介</h2>
+      </div>
+      <div class="founder-card">
+        <div class="founder-image">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80" alt="Pebble代表のプロフィール写真" loading="lazy">
+        </div>
+        <div class="founder-info">
+          <h3>田中 悠太<span class="founder-name-en">Yuta Tanaka</span></h3>
+          <p class="founder-role">Founder & CEO / Full-stack Engineer</p>
+          <p class="founder-bio">
+            大手テック企業にて10年以上のソフトウェア開発経験を積んだのち、
+            2020年にPebbleを創業。「小さな一歩が大きな変化を生む」という信念のもと、
+            Web開発からAI導入まで幅広い領域でクライアントの課題解決に取り組む。
+          </p>
+          <div class="founder-skills">
+            <span>React / Next.js</span>
+            <span>AWS / GCP</span>
+            <span>Python</span>
+            <span>AI / LLM</span>
+            <span>System Architecture</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Contactセクション ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Contact</p>
+        <h2 class="section-title">お問い合わせ</h2>
+        <p class="section-subtitle">プロジェクトのご相談、お見積もりなど、お気軽にお問い合わせください。</p>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" id="email" name="email" placeholder="taro@example.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="company">会社名</label>
+          <input type="text" id="company" name="company" placeholder="株式会社サンプル">
+        </div>
+        <div class="form-group">
+          <label for="service">ご興味のあるサービス</label>
+          <select id="service" name="service">
+            <option value="">選択してください</option>
+            <option value="web">Web Development</option>
+            <option value="cloud">Cloud & Infrastructure</option>
+            <option value="ai">AI / Machine Learning</option>
+            <option value="design">UI/UX Design</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">メッセージ</label>
+          <textarea id="message" name="message" rows="5" placeholder="プロジェクトの概要やご要望をお聞かせください" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">送信する</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== フッター ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">&#x25C8;</span> Pebble
+          </a>
+          <p>テクノロジーで未来を創る。</p>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#founder">Founder</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <ul>
+            <li>info@pebble.co.jp</li>
+            <li>03-1234-5678</li>
+            <li>東京都渋谷区xxx 1-2-3</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Pebble Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
