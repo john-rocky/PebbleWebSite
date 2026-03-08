@@ -114,16 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
   animateTargets.forEach(el => fadeObserver.observe(el));
 
   // ----- お問い合わせフォーム -----
-  const form = document.getElementById('contact-form');
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault(); // ページ遷移を防ぐ
-
-    // 実際にはここでサーバーにデータを送る処理を書く
-    // 今回はデモなのでアラートを表示
-    const name = document.getElementById('name').value;
-    alert(`${name}さん、お問い合わせありがとうございます！\n（※これはデモです。実際の送信機能は別途サーバーが必要です）`);
-    form.reset();
-  });
+  // Formspreeが送信処理を行うのでJSでの処理は不要
+  // 送信後はFormspreeの完了ページが表示される
 
 });
